@@ -1,0 +1,31 @@
+.hero,
+.hero__ctas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s-100);
+}
+
+.hero__cta {
+  padding: var(--s-100) var(--s-100) var(--s-100) 0;
+
+  p {
+    font-size: var(--fs-50);
+  }
+}
+
+@media (min-width: $bp-small) {
+  .hero__ctas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $bp-medium) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero__cta:first-child {
+    border-right: 1px solid var(--c-grey-300);
+    margin-right: 1rem;
+  }
+}

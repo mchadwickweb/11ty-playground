@@ -46,6 +46,11 @@
   margin-bottom: var(--s-400);
 }
 
+.centered {
+  display: grid;
+  margin: auto;
+}
+
 .animation-fadeInDown-100 {
   animation: var(--a-fadeInDown);
   animation-delay: var(--a-delay-100);

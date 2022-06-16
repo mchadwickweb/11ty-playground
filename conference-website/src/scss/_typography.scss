@@ -50,3 +50,8 @@ blockquote {
   padding-left: var(--s-100);
   border-left: var(--border);
 }
+
+time:not(p time) {
+  display: block;
+  font-weight: var(--fw-700);
+}

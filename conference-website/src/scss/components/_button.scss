@@ -1,21 +1,39 @@
 button,
 .button {
   display: inline-block;
-  padding: var(--s-100);
+  padding: var(--s-100) var(--s-200);
   min-height: 3rem;
   line-height: 1;
-  font-size: var(--fs-100);
   appearance: none;
   border: none;
   cursor: pointer;
   border-radius: var(--border-radius-100);
-  font-weight: 700;
+  font-weight: var(--fw-700);
+  text-align: center;
   background: var(--c-primary);
-  color: var(--c-white);
+  color: var(--button-colour, var(--c-white));
   transition: box-shadow 0.2s ease-in-out 0s;
 
   &:hover {
     box-shadow: var(--c-primary) 0px 1px 10px;
+  }
+
+  &.hollow {
+    --button-colour: var(--c-primary);
+    border: 2px solid var(--c-primary);
+    background: transparent;
+  }
+
+  &.is-full-width {
+    width: 100%;
+  }
+
+  &.has-icon {
+    display: inline-flex;
+    gap: var(--s-50);
+    svg {
+      fill: currentColor;
+    }
   }
 }
 
