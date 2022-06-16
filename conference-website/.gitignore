@@ -25,3 +25,5 @@ src/_includes/css
 *.njsproj
 *.sln
 *.sw?
+
+.DS_Store
