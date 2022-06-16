@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+.list-inline {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Credit - Scott O'Hara: https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html */
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0);

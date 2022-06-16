@@ -31,7 +31,11 @@
   --c-primary: hsl(248, 57%, 53%);
   --c-white: hsl(0, 0%, 100%);
   --c-black: hsl(0, 0%, 0%);
-  --c-grey: hsl(0deg 0% 15%);
+
+  --c-grey-100: hsl(0deg 0% 15%);
+  --c-grey-200: hsl(0deg 0% 30%);
+  --c-grey-300: hsl(0deg 0% 60%);
+
   --c-error: hsl(0deg 98% 70%);
 
   --a-fadeInDown: fadeInDown 0.8s ease-in backwards;
@@ -40,9 +44,16 @@
   --a-delay-300: 0.6s;
   --a-delay-400: 0.8s;
 
-  --border: 2px solid hsl(0deg 0% 22%);
+  --border: 2px solid var(--c-grey-300);
   --border-radius-100: 10px;
   --border-radius-200: 20px;
+
+  --box-shadow-100: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  --box-shadow-200: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --box-shadow-300: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 @import "./reset";
@@ -55,7 +66,7 @@ body {
 }
 
 :focus {
-  outline: 2px solid white;
+  outline: 2px solid var(--c-primary);
   outline-offset: 4px;
 }
 
@@ -66,5 +77,6 @@ body {
 
 // Components
 @import "./components/header";
+@import "./components/navigation";
 @import "./components/footer";
 @import "./components/button";

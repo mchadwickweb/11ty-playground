@@ -1,9 +1,9 @@
 button,
 .button {
   display: inline-block;
-  padding: 0 2.5rem;
-  height: 3rem;
-  line-height: 3rem;
+  padding: var(--s-100);
+  min-height: 3rem;
+  line-height: 1;
   font-size: var(--fs-100);
   appearance: none;
   border: none;
@@ -12,15 +12,10 @@ button,
   font-weight: 700;
   background: var(--c-primary);
   color: var(--c-white);
-  transition: box-shadow 0.3s ease-in-out 0s;
+  transition: box-shadow 0.2s ease-in-out 0s;
 
   &:hover {
-    box-shadow: rgb(80 63 205 / 90%) 0px 1px 20px;
-  }
-
-  @media (min-width: 48em) {
-    height: 3.5rem;
-    line-height: 3.5rem;
+    box-shadow: var(--c-primary) 0px 1px 10px;
   }
 }
 

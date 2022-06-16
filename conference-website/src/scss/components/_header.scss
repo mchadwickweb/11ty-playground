@@ -1,5 +1,12 @@
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 2rem;
-  padding-block: var(--s-200);
-  border-bottom: var(--border);
+  padding: var(--s-100) 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }

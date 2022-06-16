@@ -65,7 +65,7 @@ fieldset > * + * {
     margin: 0 var(--s-50);
 
     &:checked {
-      background: var(--c-grey);
+      background: var(--c-grey-200);
     }
 
     &:before {
@@ -78,7 +78,7 @@ fieldset > * + * {
       width: 15px;
       height: 15px;
       margin: auto;
-      background: var(--c-grey);
+      background: var(--c-grey-200);
       border-radius: 50%;
     }
   }

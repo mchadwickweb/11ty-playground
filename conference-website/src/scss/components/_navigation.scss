@@ -1,0 +1,44 @@
+.primary-navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle {
+  display: block;
+
+  @media (min-width: 48em) {
+    display: none;
+  }
+}
+
+.primary-navigation {
+  .menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + var(--s-50));
+    right: 0;
+    min-width: 15em;
+    padding: var(--s-50);
+    background: var(--c-white);
+    border-radius: var(--border-radius-100);
+    box-shadow: var(--box-shadow-100);
+    text-align: center;
+
+    a {
+      display: block;
+      padding: var(--s-100);
+      min-height: 3rem;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    @media (min-width: 48em) {
+      all: unset;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
